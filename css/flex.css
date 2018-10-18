@@ -1,0 +1,35 @@
+@charset "utf-8";
+.container {
+    background: orangered;
+    width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: raw;
+    /* justify-content는 메인 축을 기준으로 정렬 */
+    justify-content: space-between;
+    /* align-items 교차 축을 기준으로 정렬 */
+    align-items: center;
+    /* 줄바꿈 허용 */
+    flex-wrap: wrap;
+}
+
+.item1 {
+    background: yellow;
+    width: 250px;
+    height: 100px;
+}
+
+.item2 {
+    background: skyblue;
+    width: 250px;
+    height: 200px;
+    align-self: flex-end;
+    order: 1;
+}
+
+.item3 {
+    background: lime;
+    width: 250px;
+    height: 150px;
+    order: -1;
+}
